@@ -12,9 +12,9 @@ export default function TaskList({ loading, tasks, onPinTask, onArchiveTask }) {
     <div className='loading-item'>
         <span className='glow-checkbox'></span>
         <span className='glow-text'>
-            <span>Loading</span>
-            <span>cool</span>
-            <span>state</span>
+            <span>SPAN태그로</span>
+            <span>길이를 조정합니다</span>
+            <span>조정합니다.</span>
         </span>
     </div>
   )
@@ -42,9 +42,14 @@ export default function TaskList({ loading, tasks, onPinTask, onArchiveTask }) {
     </div>;
   }
 
+  const tasksInOrder = [
+    ...tasks.filter((t) => t.state === "TASK_PINNED"),
+    ...tasks.filter((t) => t.state !== "TASK_PINNED"),
+  ]
+
   return (
     <div className="list-items">
-      {tasks.map(task => (
+      {tasksInOrder.map(task => (
         <Task key={task.id} task={task} {...events} />
       ))}
     </div>
