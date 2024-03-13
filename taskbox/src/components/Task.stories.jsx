@@ -1,7 +1,3 @@
-/**
- * Unexpected 어쩌구~ '<' 에러 뜨면 파일명을 jsx로 바꿔보자.
- */
-
 
 import React from 'react';
 
