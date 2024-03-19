@@ -57,7 +57,7 @@ const Template = () => <TaskList />;
 
 export const Default = Template.bind({});
 Default.decorators = [
-  (story) => <Mockstore taskboxState={MockedState}>{story()}</Mockstore>,
+  (story) => <Mockstore taskboxState={MockedState}>{story()}</Mockstore>, // story()는 Template을 뜻한다.
 ];
 
 export const WithPinnedTasks = Template.bind({});
