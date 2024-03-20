@@ -3,10 +3,10 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchTasks, fetchUser } from "../lib/store";
 import TaskList from "./TaskList";
 
-export default function InboxScreen({error}) {
+export default function InboxScreen() {
     const dispatch = useDispatch();
 
-    // const { error } = useSelector((state) => state.taskbox);
+    const { error } = useSelector((state) => state.taskbox);
 
     useEffect(()=>{
         dispatch(fetchTasks())

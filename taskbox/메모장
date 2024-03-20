@@ -19,3 +19,6 @@ stories가 붙은 파일은 테스트용 파일로 봐도 되는데
 하지만 연관성이 아예 없다고는 하지 않음
 아무래도 해당 프로젝트의 TaskList.stories에서 Task.stories의 프로퍼티를 사용한 것을 보면 
 다른 스토리를 끌어와 하나의 스토리를 만들 수 있다는 걸 알 수 있음.
+
+리덕스 extraReducers잘 기억하기
+createAsyncThunk 이것도~
