@@ -22,3 +22,5 @@ stories가 붙은 파일은 테스트용 파일로 봐도 되는데
 
 리덕스 extraReducers잘 기억하기
 createAsyncThunk 이것도~
+
+스토리북 공식 문서의 예제를 사용하였음.
